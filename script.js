@@ -326,7 +326,7 @@ function goalsQuote() {
     var goalsAuthor = document.querySelector('.goals-3 h2')
 
     async function fetchQuote() {
-        let response = await fetch('http://api.quotable.io/random')
+        // let response = await fetch('http://api.quotable.io/random')
         let data = await response.json()
 
         goalsQuoteContent.innerHTML = data.content
